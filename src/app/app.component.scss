@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .menuheader { 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+  }
+  
+  .menu h1 {
+    font-size: 1.5em;
+    margin: .6em 0;
+    display: inline-block;
+  }
+  
+  
+  .navigation ul, 
+  .navigation li {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+  }
+  .navigation li:hover{
+      text-decoration: underline;
+  }

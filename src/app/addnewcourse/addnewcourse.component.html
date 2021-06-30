@@ -1,0 +1,39 @@
+<section class="create-course">
+    <h1 class="title">Create New <span style="color: royalblue;">Course</span></h1>
+    <form class="contact-form row" name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
+       <div class="form-field col-lg-6">
+          <input id="description" class="input-text js-input form-control" type="text" 
+          formControlName="description" required>
+          <label class="label" for="description">Description</label>
+       </div>
+       <div class="form-field col-lg-6">
+        <input id="prerequesite" class="input-text js-input form-control" type="text" 
+        formControlName="prerequesite" required>
+        <label class="label" for="prerequesite">Prerequesite</label>
+     </div>
+     <div class="form-field col-lg-6">
+        <input id="feedback" class="input-text js-input form-control" type="text" 
+        formControlName="feedback" required>
+        <label class="label" for="feedback">Feedback</label>
+     </div>
+     <div class="form-field col-lg-6">
+        <input id="location" class="input-text js-input form-control" type="text" 
+        formControlName="location" required>
+        <label class="label" for="location">Location</label>
+     </div>
+     <div class="form-field col-lg-6">
+        <input id="skillname" class="input-text js-input form-control" type="text" 
+        formControlName="skillname" required>
+        <label class="label" for="skillname">Skills</label>
+     </div>
+     <div class="form-field col-lg-6">
+        <input id="creatorname" class="input-text js-input form-control" type="text" 
+        formControlName="creatorname" required>
+        <label class="label" for="creatorname">Creator name</label>
+     </div>
+       <div class="form-field col-lg-12">
+          <input class="submit-btn" type="submit" value="Submit">
+       </div>
+    </form>
+  
+ </section>

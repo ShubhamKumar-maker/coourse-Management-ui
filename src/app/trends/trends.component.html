@@ -1,0 +1,13 @@
+<p>trends works!</p>
+
+<div class="heading">
+        <select [(ngModel)]="selectedName" (change)="changefun()">
+            <option value="location">location</option>
+            <option value="description">course name</option>
+        </select>
+</div>
+
+{{mydata}}
+<!-- <ng-template ngFor let-item [ngForOf]="result">
+    <h1>{{item}}</h1>
+</ng-template> -->

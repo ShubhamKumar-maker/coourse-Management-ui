@@ -1,0 +1,6 @@
+{
+    "/test/":{
+        "target":"http://localhost:8900",
+        "secure":false
+}
+}

@@ -1,0 +1,28 @@
+<!-- <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" (keyup.enter)="search($event)"/> -->
+<input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" (keyup.enter)="search($event)"/>
+<button (click)="reset()"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+<button (click)="addcourse()"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+<table id="courseTable">
+    <tr>
+      <th>Action</th>
+      <th><i class="fa fa-id-card-o" aria-hidden="true"></i>Sno</th>
+      <th><i class="fa fa-id-card-o" aria-hidden="true"></i>Name</th>
+      <th><i class="fa fa-user-o" aria-hidden="true"></i>Creation Date</th>
+    </tr>
+     <!-- <ng-template ngFor let-item [ngForOf]="onboardee | paginate:{itemsPerPage:5,currentPage:p}"> -->
+         <ng-template ngFor let-item [ngForOf]="MYCOURSE">
+     <tr>
+      <td><div>
+        <i style="font-size:24px; padding-left: 5px; cursor: pointer;"  class="fa fa-eye view" aria-hidden="true" (click)="view(item)"></i>
+        <i style="font-size:24px;padding-left: 5px; cursor: pointer;" class="fa fa-pencil-square-o edit" aria-hidden="true" (click)="view(item)" ></i>
+        <i style="font-size:24px;padding-left: 5px; cursor: pointer;" class="fa fa-trash delete" aria-hidden="true" (click)="delete(item.id)"></i>
+        <i style="font-size:24px;padding-left: 5px; cursor: pointer;" class="fa fa-envelope" aria-hidden="true" (click)="sendmail(item)" ></i></div></td>
+        <td>{{item.id}}</td>
+        <td>{{item.description}}</td>
+      <td>{{item.lastupdated}}</td>
+    </tr> 
+     </ng-template>
+     
+     <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls>   -->
+    
+</table>
