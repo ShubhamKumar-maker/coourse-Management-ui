@@ -9,6 +9,7 @@ import { AddnewcourseComponent } from './addnewcourse/addnewcourse.component';
 import { UpdatecourseComponent } from './updatecourse/updatecourse.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ChartModule } from 'angular2-chartjs';
 
 
 
@@ -27,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ChartModule,
     
   ],
   providers: [],

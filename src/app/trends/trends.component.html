@@ -11,3 +11,6 @@
 <!-- <ng-template ngFor let-item [ngForOf]="result">
     <h1>{{item}}</h1>
 </ng-template> -->
+<div *ngIf="flag">
+<chart [type]="type" [data]="data" [options]="options"  ></chart>
+</div>
